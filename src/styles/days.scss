@@ -12,7 +12,6 @@
         height: $cell;
         border: 1px solid black;
         transition: transform 0.5s, background-color 0.5s linear;
-      
     
         &:hover {
           transform: translate(0, -20px);

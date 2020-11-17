@@ -1,12 +1,12 @@
 $cell: 100px;
 $weekdays: (
   mon: 0,
-  tue: 2 + 2 * $cell,
-  wed: 3 + 3 * $cell,
-  thu: 4 + 4 * $cell,
-  fri: 5 + 5 * $cell,
-  sat: 6 + 6 * $cell,
-  sun: 7 + 7 * $cell,
+  tue: 1 + 1 * $cell,
+  wed: 2 + 2 * $cell,
+  thu: 3 + 3 * $cell,
+  fri: 4 + 4 * $cell,
+  sat: 5 + 5 * $cell,
+  sun: 6 + 6 * $cell,
 );
 
 html {
@@ -39,8 +39,6 @@ body {
     @for $j from 1 through $i {
   
       .day-#{$j} {
-        // margin-left: 1px;
-        // margin-bottom: 1px;
         background-color: #ccc;
         width: $cell;
         border: 1px solid black;

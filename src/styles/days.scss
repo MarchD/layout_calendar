@@ -1,0 +1,35 @@
+@each $i in (28, 29, 30, 31) {
+
+  .calendar-#{$i} {
+
+    @for $j from 1 through $i {
+  
+      div:nth-child(#{$j}) {
+        background-color: #eee;
+        display: flex;
+        justify-content: center;
+        width: $cell;
+        height: $cell;
+        border: 1px solid black;
+        transition: transform 0.5s, background-color 0.5s linear;
+      
+    
+        &:hover {
+          transform: translate(0, -20px);
+          background-color: #ffbfcb;
+        }
+
+        &::after {
+          content: "#{$j}";
+          align-self: center;
+        }
+      }
+    }
+  }
+}
+
+@each $weekday, $gapday in  $weekdays {
+  .calendar-#{$weekday} div:first-child {
+    margin-left: #{$gapday};
+  }
+}

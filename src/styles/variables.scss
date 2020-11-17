@@ -1,0 +1,10 @@
+$cell: 100px;
+$weekdays: (
+  mon: 0,
+  tue: 1 + 1 * $cell,
+  wed: 2 + 2 * $cell,
+  thu: 3 + 3 * $cell,
+  fri: 4 + 4 * $cell,
+  sat: 5 + 5 * $cell,
+  sun: 6 + 6 * $cell,
+);

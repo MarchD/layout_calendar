@@ -45,12 +45,11 @@ body {
         width: $cell;
         height: $cell;
         border: 1px solid black;
-        transition: bottom 0.5s, background-color 0.5s linear;
+        transition: transform 0.5s, background-color 0.5s linear;
       
     
         &:hover {
-          position: relative;
-          bottom: 20px;
+          transform: translate(0, -20px);
           background-color: #ffbfcb;
         }
 
